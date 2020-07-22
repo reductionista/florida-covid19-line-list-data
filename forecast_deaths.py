@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 #
 # Forecasts Florida COVID-19 deaths from line list case data and CFR stratified by age.
 

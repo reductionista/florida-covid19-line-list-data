@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 #
 # Analyzes Florida COVID-19 line list data by age bracket over time.
 
@@ -181,7 +181,9 @@ def main():
         except FileNotFoundError:
             files = []
         if files:
+            print(f"files = {files}")
             fname = datadir + os.sep + files[-1]
+            print(f"Set fname to '{fname}'")
         else:
             fname = csv_url
     print(f'Opening {fname}')
